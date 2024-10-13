@@ -18,7 +18,7 @@ pretrained_cfg['file'] = r'./mobilenetv3_large_100_ra-f55367f5.pth'
 
 model = Net(pretrained_cfg)
 
-model.load_state_dict(torch.load('./pth/ORSSD.pth'))
+model.load_state_dict(torch.load('./ORSSD.pth'))
 model.cuda()
 model.eval()
 
